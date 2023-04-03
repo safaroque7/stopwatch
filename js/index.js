@@ -74,3 +74,17 @@ setInterval(function () {
   stopWatch = document.querySelector("#stop-watch-background");
   stopWatch.style.background = swColor[ColorId];
 }, 1000);
+
+//main website js
+const mwMenuItem = document.querySelectorAll(".single-menu-class");
+for (let i = 0; i < mwMenuItem.length; i++) {
+  mwMenuItem[i].addEventListener("click", () => {
+    for (let j = 0; j < mwMenuItem.length; j++) {
+      if (i == j) {
+        mwMenuItem[j].classList.toggle("mw-menu-active");
+      } else {
+        mwMenuItem[j].classList.remove("mw-menu-active");
+      }
+    }
+  });
+}
