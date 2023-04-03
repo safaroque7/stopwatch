@@ -64,7 +64,6 @@ function setTimer() {
     }
 
     if (swMinutes > 9) {
-        swOutputMinutes.innerHTML = swMinutes;
+        swOutputMinutes.innerHTML = '0' + swMinutes;
     }
 }
-
