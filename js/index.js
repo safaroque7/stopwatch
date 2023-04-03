@@ -63,7 +63,7 @@ function setTimer() {
         swOutputSeconds.innerHTML = '0' + 0;
     }
 
-    if (swMinutes > 9) {
+    if (swMinutes <= 9) {
         swOutputMinutes.innerHTML = '0' + swMinutes;
     }
 }
