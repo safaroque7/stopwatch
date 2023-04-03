@@ -40,6 +40,9 @@ body {
     margin-right: 15px;
     cursor: pointer;
     border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px #fff;
 }
 .sw-buttons input[type='button']:first-child{
     background-color: green;
